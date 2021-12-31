@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;800&family=Bree+Serif&family=Exo+2:wght@800&family=IBM+Plex+Sans+Arabic&family=Libre+Baskerville:wght@700&family=Mohave&family=Montserrat:wght@500&family=Potta+One&family=Raleway:wght@200&family=Roboto+Slab:wght@900&family=Rubik:wght@500&family=Ubuntu&family=Varela+Round&family=Zen+Kaku+Gothic+New:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(245, 243, 243, 0.8);
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Header Section styling */
+header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(128, 128, 128, 0.8);
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  padding-left: 2em;
+  color: rgb(250, 100, 31);
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+#logo span {
+  color: white;
+}
+
+nav a {
+  font-weight: 700;
+  color: white;
+  font-size: 19px;
+  transition: 0.2s;
+  margin-right: 1ch;
+}
+
+nav a:hover {
+  color: rgb(255, 81, 0);
+}
+
+#lines {
+  height: max-content;
+  display: none;
+}
+
+.line {
+  border-radius: 2px;
+  height: 4px;
+  width: 25px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.icons i {
+  color: white;
+  margin-right: 1.5em;
+  transition: 0.3s;
+}
+
+.icons i:hover {
+  cursor: pointer;
+  color: orangered;
+}
+
+#searchbar {
+  position: absolute;
+  top: -70px;
+  /* left: 1cm; */
+  transition: 0.5s;
+  display: flex;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.4);
+  /* border-radius: 5px; */
+}
+
+#searchbar input {
+  height: 5vh;
+  width: 93vw;
+  border: 0;
+  margin: 1em 1em 1em 2.5em;
+  padding-left: 1em;
+  border-radius: 5px;
+}
+
+/* Intro section styling */
+.intro {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2em;
+  padding-top: 4cm;
+}
+
+#carouselExampleIndicators {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.carousel-item video {
+  opacity: 0.8;
+  width: 100vw;
+  object-fit: cover;
+  height: 85vh;
+}
+
+.intro h3 {
+  font-size: 1.3em;
+  font-weight: 900;
+  word-spacing: 15px;
+  letter-spacing: 2px;
+}
+
+.intro p {
+  font-weight: 600;
+  word-spacing: 10px;
+  letter-spacing: 1.5px;
+}
+
+#traveloffer {
+  border-radius: 2px;
+  font-weight: 500;
+  color: white;
+  font-size: 18px;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 5px;
+  margin-top: 1cm;
+  background-color: rgb(255, 208, 0, 0.7);
+  border: 0;
+  padding: 10px 1em;
+  transition: 0.3s;
+}
+
+#traveloffer:hover {
+  cursor: pointer;
+  background-color: rgb(165, 42, 42, 0.7);
+}
+
+.new-section {
+  margin-top: 3cm;
+}
+
+.container {
+  margin-top: 2cm;
+}
+
+h1 {
+  text-transform: uppercase;
+  word-spacing: 0.1em;
+  text-align: center;
+  letter-spacing: 0.5em;
+  font-size: 3em;
+  font-weight: 800;
+  margin-top: 1.5cm;
+}
+
+h1 span {
+  background-color: rgb(255, 220, 64);
+  margin: -10px;
+  border-radius: 5px;
+  padding-left: 21px;
+}
+
+/* Booking section styling */
+#booking form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2cm;
+}
+
+form img {
+  height: 12cm;
+}
+
+form .labels {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2cm 1cm;
+  box-shadow: 0 1rem 2rem rgb(0, 0, 0, 0.5);
+}
+
+form label {
+  font-size: 1.2em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+}
+
+form select,
+form input {
+  height: 1.3cm;
+  font-size: medium;
+  padding-left: 5px;
+}
+
+/* All containers styling */
+#package-container,
+#service-container,
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 13cm);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Service and package card styling */
+.package-card,
+.service-card {
+  border-radius: 10px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1cm;
+  text-align: center;
+  /* border: 2px solid salmon; */
+  box-shadow: 0 0.5em 0.5em 0.5em rgb(0, 0, 0, 0.5);
+}
+
+/* Package Card elements styling */
+.package-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+.package-card p {
+  padding: 0 1em;
+  margin-bottom: 2rem;
+}
+
+.package-card span {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.package-card span i {
+  color: rgb(255, 174, 0);
+  margin-right: 1em;
+}
+
+.package-card span h4 {
+  font-size: 1.5em;
+}
+
+.price {
+  display: inline-flex;
+}
+
+.price span {
+  margin: 1em 5px;
+}
+
+.original {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.package-card button {
+  font-size: 20px;
+  border-radius: 3px;
+  background-color: rgb(255, 174, 0);
+  border: 0;
+  padding: 10px 20px;
+  margin-bottom: 1cm;
+}
+
+/* Service Card elements styling */
+#service {
+  margin-top: 2cm;
+}
+
+.service-card {
+  padding-bottom: 1em;
+}
+
+.service-card i {
+  padding-top: 20px;
+  color: rgb(255, 81, 0);
+}
+
+.service-card h3 {
+  margin: 1em;
+  font-weight: 700;
+}
+
+/* Gallery section styling */
+#gallery {
+  margin-top: 2cm;
+}
+
+.gallery {
+  box-shadow: 0 0.5em 0.5em 0.5em rgb(0, 0, 0, 0.4);
+  margin: 1cm;
+  object-fit: cover;
+  border: 10px solid rgb(218, 218, 218);
+}
+
+.gallery img {
+  border-radius: 2px;
+  height: 15rem;
+  width: 100%;
+}
+
+/* Review section styling */
+#review {
+  margin-top: 2cm;
+}
+
+#review-container {
+  display: flex;
+  justify-content: center;
+}
+
+.review {
+  border-radius: 2px;
+  box-shadow: 0 1.5px 1.5px 1.5px rgb(0, 0, 0, 0.4);
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+
+.review img {
+  height: 5cm;
+}
+
+.review p {
+  text-align: center;
+}
+
+/* Headquarter section styling */
+#headquarter-container {
+  margin-top: 2cm;
+  display: flex;
+  justify-content: center;
+}
+
+.headquarters {
+  box-shadow: 0 1.5px 1.5px 1.5px rgb(0, 0, 0, 0.8);
+  padding: 1em 1.5em;
+}
+
+.headquarters iframe {
+  width: 92vw;
+}
+
+.headquarters p {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* Footer section styling */
+#footer {
+  background-color: rgb(0, 0, 0, 0.8);
+  padding: 50px 1em 2px 1em;
+  margin-top: 2cm;
+  color: white;
+}
+
+#footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#footer-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-container div h4 {
+  font-size: 1.5em;
+}
+
+#footer-container div span,
+#footer-container div a {
+  font-size: 15px;
+}
+
+#footer-container a {
+  color: white;
+  font-size: 19px;
+  transition: 0.2s;
+  width: fit-content;
+}
+
+#footer a:hover {
+  color: orangered;
+}
+
+#copyright {
+  text-align: center;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  position: relative;
+  bottom: -0.5cm;
+  font-weight: 700;
+}
+
+#copyright span{
+  color: rgb(255, 119, 119);
+  font-family: 'Bree serif' , serif;
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+/* Media Queries */
+@media (max-width: 1400px) {
+  html {
+    width: 100vw;
+  }
+
+  body {
+    width: 100vw;
+  }
+
+  header {
+    height: 2cm;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 1cm;
+  }
+
+  .icons {
+    position: relative;
+    right: 1.5cm;
+    display: none;
+  }
+
+  #booking form {
+    flex-direction: column;
+  }
+
+  #service-container,
+  #package-container,
+  #package-container,
+  #review-container,
+  #gallery-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .service-card p {
+    padding: 0 1em;
+    height: 2cm;
+    width: 20cm;
+  }
+
+  .carousel-item video {
+    height: fit-content;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 414px) {
+  #logo {
+    font-size: 15px;
+  }
+}

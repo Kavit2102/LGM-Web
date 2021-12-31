@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTravell | Book your own travelling</title>
+    <!-- Font Awesome CDN link -->
+    <script
+      src="https://kit.fontawesome.com/9c178c531a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Data AOS Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header section begins -->
+    <header data-aos="fade">
+      <a href="#" id="logo"> MyTr<span>avell</span> </a>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#Book">Book</a>
+        <a href="#package-container">Packages</a>
+        <a href="#service-container">Services</a>
+        <a href="#gallery-container">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+
+      <div id="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-2x fa-search" id="search-icon"></i>
+        <i class="fas fa-2x fa-user"></i>
+      </div>
+
+    </header>
+    <div id="searchbar">
+      <input type="search" name="" id="">
+    </div>
+    <!-- Header section ends -->
+
+    <!-- Main content section  -->
+    <main id="home" class="home">
+
+      <!-- Introduction -->
+      <div class="intro" data-aos="fade">
+        <!-- Carousels -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <video src="./Images/v1.mp4"></video>
+            </div>
+            <div class="carousel-item">
+              <video src="./Images/v2.mp4"></video>
+            </div>
+            <div class="carousel-item">
+              <video src="./Images/v3.mp4"></video>
+            </div>
+          </div>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <h3>Book Your advanture with joy</h3>
+        <p>Get discount and offers on travel</p>
+        <div class="buttons">
+          <button id="traveloffer">Travel Offers</button>
+        </div>
+      </div>
+
+      <!-- Booking section -->
+      <div id="book" class="new-section">
+        <h1 class="container">
+          <span id="book">
+            <span>B</span><span>o</span><span>o</span><span>k</span>
+          </span>
+          <span id="now"> <span>N</span><span>o</span><span>w</span> </span>
+        </h1>
+      </div>
+
+      
+      <div id="booking" data-aos="fade">
+        <form action="">
+          <img src="./Images/book-img.svg" alt="">
+          <div class="labels">
+            <label for="from">From</label>
+            <select name="from" id="from">
+              <option value="delhi">Delhi</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="banglore">Banglore</option>
+              <option value="indore">Indore</option>
+            </select>
+
+            <label for="destination">Destination</label>
+            <select name="destination" id="destination">
+              <option value="delhi">Delhi</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="banglore">Banglore</option>
+              <option value="indore">Indore</option>
+            </select>
+
+            <label for="departure">
+              Departure
+              <input type="date" name="" id="" />
+            </label>
+
+            <label for="return">
+              Return
+              <input type="date" name="" id="" />
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <!-- Packages section -->
+      <div id="packages" class="new-section">
+        <h1>
+          <span>P</span>
+          <span>a</span>
+          <span>c</span>
+          <span>k</span>
+          <span>a</span>
+          <span>g</span>
+          <span>e</span>
+          <span>s</span>
+        </h1>
+
+        <!-- Package Container -->
+        <div id="package-container" class="container" data-aos="fade">
+          <div class="package-card">
+            <img src="./Images/Delhi.jpg" alt="">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Delhi</h4>
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Asperiores earum voluptatem dignissimos unde impedit dolores
+              consequuntur incidunt molestias praesentium eligendi.
+            </p>
+            <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <div class="price">
+              <span class="original">Rs.8400</span>
+              <span class="discount">Rs.6300</span>
+            </div>
+            <button type="button">Book Now</button>
+          </div>
+          <div class="package-card">
+            <img src="./Images/Mumbai.jfif" alt="">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Mumbai</h4>
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Asperiores earum voluptatem dignissimos unde impedit dolores
+              consequuntur incidunt molestias praesentium eligendi.
+            </p>
+            <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <div class="price">
+              <span class="original">Rs.8400</span>
+              <span class="discount">Rs.6300</span>
+            </div>
+            <button type="button">Book Now</button>
+          </div>
+          <div class="package-card">
+            <img src="./Images/Sydney.jpg" alt="">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Sydney</h4>
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Asperiores earum voluptatem dignissimos unde impedit dolores
+              consequuntur incidunt molestias praesentium eligendi.
+            </p>
+            <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <div class="price">
+              <span class="original">Rs.8400</span>
+              <span class="discount">Rs.6300</span>
+            </div>
+            <button type="button">Book Now</button>
+          </div>
+          <div class="package-card">
+            <img src="./Images/California.jpg" alt="">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>California</h4>
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Asperiores earum voluptatem dignissimos unde impedit dolores
+              consequuntur incidunt molestias praesentium eligendi.
+            </p>
+            <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <div class="price">
+              <span class="original">Rs.8400</span>
+              <span class="discount">Rs.6300</span>
+            </div>
+            <button type="button">Book Now</button>
+          </div>
+          <div class="package-card">
+            <img src="./Images/Moscow.jpg" alt="">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Moscow</h4>
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Asperiores earum voluptatem dignissimos unde impedit dolores
+              consequuntur incidunt molestias praesentium eligendi.
+            </p>
+            <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <div class="price">
+              <span class="original">Rs.8400</span>
+              <span class="discount">Rs.6300</span>
+            </div>
+            <button type="button">Book Now</button>
+          </div>
+          <div class="package-card">
+            <img src="./Images/Singapore.jpg" alt="">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Singapore</h4>
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Asperiores earum voluptatem dignissimos unde impedit dolores
+              consequuntur incidunt molestias praesentium eligendi.
+            </p>
+            <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+            <div class="price">
+              <span class="original">Rs.8400</span>
+              <span class="discount">Rs.6300</span>
+            </div>
+            <button type="button">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Section -->
+      <div id="service" class="new-section">
+        <h1>
+          <span>S</span>
+          <span>e</span>
+          <span>r</span>
+          <span>v</span>
+          <span>i</span>
+          <span>c</span>
+          <span>e</span>
+          <span>s</span>
+        </h1>
+      </div>
+
+      <!-- Services container -->
+      <div id="services">
+        <div id="service-container" class="container" data-aos="fade">
+          <div class="service-card">
+            <i class="fas fa-5x fa-plane-departure"></i>
+            <h3>Fast and Easy Travel</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+              aperiam maxime rem distinctio quis modi veritatis assumenda.
+              Mollitia, voluptas quisquam.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-5x fa-utensils"></i>
+            <h3>Our Tasty Food</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+              aperiam maxime rem distinctio quis modi veritatis assumenda.
+              Mollitia, voluptas quisquam.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-5x fa-credit-card"></i>
+            <h3>Crazy Credit Card Offers</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+              aperiam maxime rem distinctio quis modi veritatis assumenda.
+              Mollitia, voluptas quisquam.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-5x fa-globe-asia"></i>
+            <h3>World Tour</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+              aperiam maxime rem distinctio quis modi veritatis assumenda.
+              Mollitia, voluptas quisquam.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-5x fa-bullhorn"></i>
+            <h3>Safe Environment</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+              aperiam maxime rem distinctio quis modi veritatis assumenda.
+              Mollitia, voluptas quisquam.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-5x fa-hotel"></i>
+            <h3>Hotels and Homestays</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+              aperiam maxime rem distinctio quis modi veritatis assumenda.
+              Mollitia, voluptas quisquam.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery section -->
+      <div id="gallery" class="new-section">
+        <h1>
+          <span>G</span>
+          <span>a</span>
+          <span>l</span>
+          <span>l</span>
+          <span>e</span>
+          <span>r</span>
+          <span>y</span>
+        </h1>
+      </div>
+
+      <!-- Gallery photos container -->
+      <div id="gallery-photos">
+        <div id="gallery-container" class="container" data-aos="fade">
+          <div class="gallery">
+            <img src="./Images/g-1.jpg" alt="">
+          </div>
+
+          <div class="gallery">
+            <img src="./Images/g-2.jpg" alt="">
+          </div>
+
+          <div class="gallery">
+          <img src="./Images/g-3.jpg" alt="">  
+          </div>
+
+          <div class="gallery">
+            <img src="./Images/g-4.jpg" alt="">
+          </div>
+
+          <div class="gallery">
+            <img src="./Images/g-5.jpg" alt="">
+          </div>
+
+          <div class="gallery">
+            <img src="./Images/g-6.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Review section -->
+      <div id="review" class="new-section" >
+        <h1>
+          <span>R</span>
+          <span>e</span>
+          <span>v</span>
+          <span>i</span>
+          <span>e</span>
+          <span>w</span>
+        </h1>
+      </div>
+
+
+      <!-- Review container -->
+      <div id="review-container" class="container" data-aos="fade">
+        <div class="review">
+          <img src="./Images/Rev1.jpg" alt="">
+          <h3></h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            placeat sint vero aliquam magnam accusantium, quos accusamus. Eum,
+            earum doloribus.
+          </p>
+          <span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
+        </div>
+
+        <div class="review">
+          <img src="./Images/Rev2.jpg" alt="">
+          <h3></h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            placeat sint vero aliquam magnam accusantium, quos accusamus. Eum,
+            earum doloribus.
+          </p>
+          <span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
+        </div>
+
+        <div class="review">
+          <img src="./Images/Rev3.jpg" alt="">
+          <h3></h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            placeat sint vero aliquam magnam accusantium, quos accusamus. Eum,
+            earum doloribus.
+          </p>
+          <span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+        </div>
+
+        <div class="review">
+          <img src="./Images/Rev4.jpg" alt="">
+          <h3></h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            placeat sint vero aliquam magnam accusantium, quos accusamus. Eum,
+            earum doloribus.
+          </p>
+          <span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </span>
+        </div>
+      </div>
+      
+      <!-- Location Section -->
+      <div id="location" class="new-section">
+        <h1>
+          <span>H</span>
+          <span>e</span>
+          <span>a</span>
+          <span>d</span>
+          <span>q</span>
+          <span>u</span>
+          <span>a</span>
+          <span>r</span>
+          <span>t</span>
+          <span>e</span>
+          <span>r</span>
+          <span>s</span>
+        </h1>
+      </div>
+
+      <!-- Headquarters -->
+      <div id="headquarter-container" class="container" data-aos="fade">
+        <div class="headquarters">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.43443780402!2d75.88728505063732!3d22.71208848503819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd6d5c629411%3A0x7fac34d30c100fe4!2sMadhya%20Pradesh%20Tourism!5e0!3m2!1sen!2sin!4v1640576566246!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            42, Residency Area, In Front Of Saint Paul Higher Secondary School,
+            Indore, Madhya Pradesh 452001
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer section -->
+      <div id="footer" data-aos="fade">
+        <div id="footer-container" >
+          <div class="about">
+            <h4>About Us</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> 
+              <span>Odio laborum itaque illo reprehenderit a,</span>
+              <span>quas accusantium quod quo quibusdam id?</span>
+            </span>
+          </div>
+          
+          <div class="branches">
+            <h4>Our Branches</h4>
+            <a href="">India</a><a href="">Japan</a><a href="">Auatralia</a><a href="">USA</a>
+          </div>
+  
+          <div class="quicklinks">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#Book">Book</a>
+          <a href="#package-container">Packages</a>
+          <a href="#service-container">Services</a>
+          <a href="#gallery-container">Gallery</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact Us</a>          
+          </div>
+  
+          <div class="followus">
+            <h4>Follow Us</h4>
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Linkedin</a>
+            <a href="">Twitter</a>
+            <a href="">Pinterest</a>
+          </div>
+        </div>
+        <div id="copyright">
+          <p>By <span>KAVIT DESAI</span> &copy; | All Rights Reserved </p>
+        </div>
+      </div>
+    </main>
+    <!-- Bootstrap JS link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay : 2
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
